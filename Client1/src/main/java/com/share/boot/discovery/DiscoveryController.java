@@ -16,9 +16,5 @@ public class DiscoveryController {
     public List<String> services() {
         return discoveryService.getServices();
     }
-    
-    @GetMapping(value = "/resttemplate/{id}")
-    public String resttemplate(@PathVariable("id") String id) {
-        return discoveryService.resttemplate(id);
-    }
+
 }
